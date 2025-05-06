@@ -1,0 +1,32 @@
+Springboot with User authentification
+link of tutorial: https://spring.io/guides/gs/securing-web#scratch
+
+IDE: VS code
+Extensions: Java, Spring Initialzr Java Support
+
+Java: 24
+Maven: 4.0
+Spring Boot: 3.4.5
+Dependencies: (link: https://start.spring.io/)
+Spring Web: Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.
+Thymeleaf: A modern server-side Java template engine for both web and standalone environments. Allows HTML to be correctly displayed in browsers and as static prototypes.
+
+In Spring Boot (and generally in the Spring Framework), the term "bean" refers to a Java object that is created, assembled, and managed by the Spring IoC (Inversion of Control) container.
+
+A bean is: An object instantiated and managed by the Spring IoC Container.
+Typically configured via annotations (@Bean, @Component, @Service, @Repository) or XML.
+Managed through its lifecycle (instantiation, configuration, destruction).
+Beans are core to Spring’s dependency injection and IoC container model
+
+Dependency Injection is a design approach that delegates the responsibility of creating and managing dependencies to a container (e.g., Spring).
+
+In simple terms:
+Without DI: You manually manage and instantiate objects. ❌
+With DI: Spring automatically manages and injects dependencies for you. 
+
+Inversion of Control (IoC) means your application code hands over control of object creation and dependency management to a framework (like Spring), improving modularity, testability, and maintainability. (DI is a form of IoC)
+
+If Spring Security is on the classpath, then web applications are secured by default. Spring Boot relies on Spring Security’s content-negotiation strategy to determine whether to use httpBasic or formLogin. 
+
+Could be run with Gradle or Maven command. 
+Could also build a single executable JAR file that contains all the necessary dependencies, classes, and resources.
